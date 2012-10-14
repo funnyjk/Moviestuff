@@ -1,8 +1,10 @@
 <html>
 <body>
 
-
+	
 	<?php
+	$body = $_REQUEST["Body"];
+	$from = $_REQUEST["From"];
 
 	$moviet = str_replace(" ", "%20", $_POST["title"]);
 	$url = "http://api.rottentomatoes.com/api/public/v1.0/movies.json?q=". $moviet . "&apikey=cgu43t3cn6fs9c3hennzgzjt";

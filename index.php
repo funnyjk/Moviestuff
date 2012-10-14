@@ -1,11 +1,16 @@
+<?php
+
+	$body = $_REQUEST["Body"];
+	$from = $_REQUEST["From"];
+?>	
+<form action="form.php" method="post">
+			<?php
+				echo $body;
+			?>
+</form>
+
 <html>
-<body>
-
-	<form action="form.php" method="post"> 
-		Movie Name: <input type="text" name="title" />
-		<input type="submit" /> 
-	</form>
-	<!-- test -->
-
-</body>
+<?php
+echo($body);
+?>
 </html>
